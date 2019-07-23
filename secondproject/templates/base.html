@@ -42,14 +42,23 @@
                             <form id="logout" method="POST" action="{% url 'logout' %}">
                                 {% csrf_token %} <input type="hidden" />
                             </form>
+                            <a class="dropdown-item"
+                                href="social_accounts/logout">Social Logout</a>
                         </div>
                     </li>
                     {% else %}
+                    {% load socialaccount %}
+                    {% providers_media_js %}
+
                     <li class="nav-item">
                         <a class="nav-item nav-link" href="{% url 'signup' %}">Signup</a>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="social_accounts/signup">Social_Signup</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-item nav-link" href="{% url 'login' %}">Login</a>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" href="{% provider_login_url 'google' %}">Google Login</a>
                     </li>
                     {% endif %}
                 </ul>
