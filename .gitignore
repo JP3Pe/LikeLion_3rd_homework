@@ -114,6 +114,7 @@ celerybeat-schedule
 .venv
 env/
 venv/
+myvenv
 ENV/
 env.bak/
 venv.bak/
@@ -193,10 +194,12 @@ dmypy.json
 
 ### VisualStudioCode ###
 .vscode/*
+.vscode
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+3RD_HOMEWORK.code-workspace
 
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
