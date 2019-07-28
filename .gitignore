@@ -234,3 +234,7 @@ Temporary Items
 .apdisk
 
 # End of https://www.gitignore.io/api/python,django,visualstudiocode
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
